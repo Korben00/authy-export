@@ -24,7 +24,6 @@ import time
 import musicalbeeps
 import threading
 import webbrowser
-import colorama
 import pyfiglet
 
 
@@ -276,7 +275,6 @@ def play_sound():
             player.play_note("E", note_duration * 2)
 
 
-colorama.init()
 # Create the root window
 root = tk.Tk()
 root.title("Authy TOTP Extractor")
