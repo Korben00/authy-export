@@ -4,7 +4,7 @@ This application is designed to extract TOTP (Time-based One-Time Password) info
 
 # Features
 
-Extract TOTP information from Authy.
+Extract TOTP information from Authy macOS / Linux.
 
 # Requirements
 
