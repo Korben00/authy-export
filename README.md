@@ -1,31 +1,39 @@
 #Authy TOTP Extractor
 
-Authy TOTP Extractor is a Python application that allows you to extract Time-based One-Time Password (TOTP) information from Authy. It does this by launching Authy in debug mode and using the Chrome DevTools API to communicate with the browser. The application then runs a JavaScript script to decrypt and extract the TOTP information, which it can then save to a file or display to the user.
+This application is designed to extract TOTP (Time-based One-Time Password) information from Authy by launching Authy in debug mode and using the Chrome DevTools API to communicate with the browser. It then runs a JavaScript script to decrypt and extract the TOTP information, which can be saved to a file or displayed to the user. This can be useful for those who want to migrate their TOTP information from Authy to another service, or simply want to access and view their TOTP information in an easier way.
 
-#Prerequisites
+#Features
 
+Extract TOTP information from Authy.
+
+#Requirements
+
+Authy Desktop
 Python 3
-Authy
 PyChromeDevTools
-musicalbeeps
+tkinter
 colorama
 pyfiglet
+musicalbeeps
 
-#How to use
+#Installation
 
-Make sure you have all the prerequisites installed.
-Clone or download this repository.
-Navigate to the directory where you cloned or downloaded the repository.
-Run the following command to launch the application: python authy-export.py
-The application will launch and prompt you to enter a path to save the TOTP information.
-Enter the path and press Enter.
-The application will then launch Authy in debug mode and extract the TOTP information.
-When the process is complete, a message will be displayed indicating that the TOTP information has been saved to the specified file.
+Clone or download this repository
+Navigate to the repository directory in a terminal
+Run the following command: pip install -r requirements.txt
 
-#Note
+#Usage
 
-The application currently only supports macOS and Linux. It may work on other platforms, but this has not been tested.
+Run the script: python authy-export.py
+The script will launch Authy in debug mode. If Authy is not already installed, it will need to be installed first.
+The script will run the JavaScript script to decrypt and extract the TOTP information.
+The TOTP information will be displayed to the user and can be saved to a file by entering the desired file name and pressing enter.
 
-Compiling
+#Compilation
 
-To compile the application into a standalone executable, you can use the following command: `pyinstaller --onefile --n
+To compile the script into an executable file, run the following command:
+pyinstaller --onefile --noconsole --icon ico.ico authy-export.py
+
+#Author
+
+Korben - https://korben.info
