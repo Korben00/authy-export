@@ -201,7 +201,7 @@ def on_button_click():
     label['text'] = ' TOTP data extracted successfully! You\'re amazing! '
     label["font"] = 'Helvetica 20 bold'
 
-# Fonction qui met à jour le contenu du label
+# Function that updates the content of the label
 def update_label():
     current_text = label["text"]
     new_text = current_text[1:] + current_text[0]
@@ -295,28 +295,20 @@ hover_color = '#cccccc'
 display_logo()
 display_logo_korben()
 
-# Charger l'image à afficher en tant que titre
-#image = tk.PhotoImage(file="horror.png")
-# Créer le widget Label pour afficher l'image
-#label = tk.Label(root, image=image)
-#label.pack()
-# Create the widgets
-#label0 = tk.Label(root, text="Click to extract TOTP data", font=font, bg=bg_color, fg=fg_color, width=200, height=2)
-#label0.pack()
 # Create the button
 button = tk.Button(root, text="Click to export TOTP", font=font, bg=bg_color, activebackground='#999999', activeforeground='#ffffff', command=on_button_click, width=15, height=2, padx=10, pady=10)
 button.pack()
 # Add hover effect to the button
 button.bind("<Enter>", lambda event: event.widget.configure(bg=hover_color))
 button.bind("<Leave>", lambda event: event.widget.configure(bg=bg_color))
-# Créer le label avec le texte à faire défiler, label d'une largeur de 200 pixels
+# Create the label with the text to scroll, label width 200 pixels
 label = tk.Label(root, text=" KORBEN.INFO ", font=('Helvetica', 13, 'underline'), bg=bg_color, fg=fg_color, pady=100, width=400)
 #make this label clickable to open url https://korben.info
 label.bind("<Button-1>", lambda e: webbrowser.open_new("https://korben.info"))
 label.pack()
 
 
-# Mettre à jour le contenu du label toutes les 100 ms
+# Update the label content every 100 ms
 root.after(1, update_label)
 
 
