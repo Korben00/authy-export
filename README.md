@@ -8,13 +8,12 @@ Extract TOTP information from Authy.
 
 # Requirements
 
-Authy Desktop
-Python 3
-PyChromeDevTools
-tkinter
-colorama
-pyfiglet
-musicalbeeps
+* Authy Desktop
+* Python 3
+* PyChromeDevTools
+* tkinter
+* pyfiglet
+* musicalbeeps
 
 # Installation
 
