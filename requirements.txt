@@ -1,5 +1,4 @@
 PyChromeDevTools
-tkinter
-colorama
+tk
 pyfiglet
 musicalbeeps
