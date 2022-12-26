@@ -23,6 +23,8 @@ Run the following command:
 
 * pip install -r requirements.txt
 
+Linux: You need python3-dev libasound2-dev to install musicalbeeps package.
+
 # Usage
 
 Run the script: python authy-export.py
