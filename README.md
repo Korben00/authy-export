@@ -19,7 +19,9 @@ Extract TOTP information from Authy.
 
 Clone or download this repository
 Navigate to the repository directory in a terminal
-Run the following command: pip install -r requirements.txt
+Run the following command: 
+
+* pip install -r requirements.txt
 
 # Usage
 
@@ -31,7 +33,8 @@ The TOTP information will be displayed to the user and can be saved to a file by
 # Compilation
 
 To compile the script into an executable file, run the following command:
-pyinstaller --onefile --noconsole --icon ico.ico authy-export.py
+
+* pyinstaller --onefile --noconsole --icon ico.ico authy-export.py
 
 # Author
 
