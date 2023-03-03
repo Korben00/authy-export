@@ -34,11 +34,19 @@ The script will launch Authy in debug mode. If Authy is not already installed, i
 The script will run the JavaScript script to decrypt and extract the TOTP information.
 The TOTP information will be displayed to the user and can be saved to a file by entering the desired file name and pressing enter.
 
+# Execution
+
+git clone https://github.com/Korben00/AuthyExtractor.git
+
+cd AuthyExtractor
+
+python3 authy-export.py
+
 # Compilation
 
 To compile the script into an executable file, run the following command:
 
-* pyinstaller --onefile --noconsole --icon ico.ico authy-export.py
+* pyinstaller --collect-all pyfiglet --onefile --noconsole --icon ico.ico authy-export.py
 
 # Author
 
