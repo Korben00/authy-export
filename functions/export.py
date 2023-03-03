@@ -1,6 +1,7 @@
 from functions.html_table import htmltable
 import PyChromeDevTools
 import json
+import time
 
 def export():
     
@@ -89,6 +90,7 @@ def export():
     }
     deEncrypt({ log: true, save: false });"""
     
+    time.sleep(5)
     # Run the script in the browser
     result = chrome.Runtime.evaluate(expression=script)
     
