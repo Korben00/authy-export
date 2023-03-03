@@ -14,6 +14,8 @@ Extract TOTP information from Authy macOS / Linux.
 * tkinter
 * pyfiglet
 * musicalbeeps
+* colorama
+* qrcode
 
 # Installation
 
