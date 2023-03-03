@@ -1,4 +1,4 @@
-# Authy TOTP Extractor
+# Authy Export - TOTP Extractor
 
 <p align="center">
   <img src="https://korben.info/app/uploads/2023/03/SCR-20230303-o0u-2.webp">
