@@ -96,8 +96,4 @@ def export():
     result = result[1][0]['result']['result']['value']
     parsed_json = json.loads(result)
     htmltable(parsed_json)
-    for item in parsed_json["items"]:
-        name = item["name"]
-        totp = item["login"]["totp"]
-        print(f"Nom: {name}, Code TOTP: {totp}")
     chrome.close()
