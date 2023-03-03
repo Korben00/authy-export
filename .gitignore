@@ -2,3 +2,4 @@
 dist/
 build/
 authy-export.spec
+functions/__pycache__/
