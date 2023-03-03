@@ -1,5 +1,9 @@
 # Authy TOTP Extractor
 
+<p align="center">
+  <img src="https://korben.info/app/uploads/2023/03/SCR-20230303-o0u-2.webp">
+</p>
+
 This application is designed to extract TOTP (Time-based One-Time Password) information from Authy by launching Authy in debug mode and using the Chrome DevTools API to communicate with the browser. It then runs a JavaScript script to decrypt and extract the TOTP information, which can be saved to a file or displayed to the user. This can be useful for those who want to migrate their TOTP information from Authy to another service, or simply want to access and view their TOTP information in an easier way.
 
 # Features
