@@ -8,9 +8,6 @@ from io import BytesIO
 def htmltable(parsed_json):
 
     #create a html table that containe name and totp
-    save_dir = filedialog.askdirectory()
-    if not save_dir:
-        return
     html = f"""
     <html>
     <head>
@@ -70,5 +67,10 @@ def htmltable(parsed_json):
     </body>
     </html>
     """
-    with open(f"{save_dir}/Authy-export.html", "w") as f:
-        f.write(html)
+
+    default_file_name = "export-authy.html"
+    file_path = filedialog.asksaveasfilename(defaultextension=".html", initialfile=default_file_name)
+
+    if file_path:
+        with open(file_path, "w") as f:
+            f.write(html)
