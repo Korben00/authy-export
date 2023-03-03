@@ -1,4 +1,5 @@
 PyChromeDevTools
-tk
-pyfiglet
+colorama
 musicalbeeps
+pyfiglet
+qrcode
