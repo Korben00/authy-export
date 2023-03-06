@@ -40,7 +40,7 @@ The TOTP information will be displayed to the user and can be saved to a file by
 
 # Execution
 
-git clone https://github.com/Korben00/AuthyExtractor.git
+git clone https://github.com/Korben00/authy-export.git
 
 cd AuthyExtractor
 
