@@ -51,7 +51,7 @@ def htmltable(parsed_json):
         img = qr.make_image(fill_color="black", back_color="white")
         # save the QR code to a BytesIO object
         buffer = BytesIO()
-        img.save(buffer, format="PNG")
+        img.save(buffer)
         # encode the QR code as base64
         qr_code = base64.b64encode(buffer.getvalue()).decode("utf-8")
         # add the QR code to the HTML table
