@@ -23,13 +23,33 @@ Extract TOTP information from Authy macOS / Linux.
 
 # Installation
 
+## Install Authy Destop
+Install Authy desktop version 2.2.3 (later versions does not work)
+It might still work if you haven't updated Authy Desktop.
+
+### Windows / MacOS
+- **macOS:** [https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg](https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg)
+- **Win (x64):** [https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe](https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe)
+- **Win (x32):** [https://pkg.authy.com/authy/stable/2.2.3/win64/x64/Authy%20Desktop%20Setup%202.2.3.exe](https://pkg.authy.com/authy/stable/2.2.3/win64/x64/Authy%20Desktop%20Setup%202.2.3.exe)
+
+### Linux
+Authy does not provide a snap package version history so you have to use flatpak which is community-run.
+
+```sh
+flatpak install com.authy.Authy && \
+sudo flatpak update --commit=9e872aaec7746c602f8b24679824c87ccc28d8e81b77f9b0213f7644cd939cee com.authy.Authy && \
+alias authy="flatpak run com.authy.Authy"
+```
+**note:** run `alias authy="flatpak run com.authy.Authy` before running Authy Export if you've closed the terminal session 
+
+## Install Authy-Export
 Clone or download this repository
 Navigate to the repository directory in a terminal
 Run the following command: 
 
 * pip install -r requirements.txt
 
-Linux: You need python3-dev libasound2-dev to install musicalbeeps package.
+**Linux:** You need python3-dev libasound2-dev to install musicalbeeps package.
 
 # Usage
 
