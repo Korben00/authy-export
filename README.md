@@ -36,8 +36,8 @@ It might still work if you haven't updated Authy Desktop.
 Authy does not provide a snap package version history so you have to use flatpak which is community-run.
 
 ```sh
-flatpak install com.authy.Authy && \
-sudo flatpak update --commit=9e872aaec7746c602f8b24679824c87ccc28d8e81b77f9b0213f7644cd939cee com.authy.Authy && \
+flatpak install com.authy.Authy
+sudo flatpak update --commit=9e872aaec7746c602f8b24679824c87ccc28d8e81b77f9b0213f7644cd939cee com.authy.Authy
 alias authy="flatpak run com.authy.Authy"
 ```
 **note:** run `alias authy="flatpak run com.authy.Authy` before running Authy Export if you've closed the terminal session 
