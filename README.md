@@ -47,7 +47,11 @@ Clone or download this repository
 Navigate to the repository directory in a terminal
 Run the following command: 
 
-* pip install -r requirements.txt
+```sh
+git clone https://github.com/Korben00/authy-export.git
+cd AuthyExtractor
+pip install -r requirements.txt
+```
 
 **Linux:** You need python3-dev libasound2-dev to install musicalbeeps package.
 
@@ -59,18 +63,17 @@ The script will run the JavaScript script to decrypt and extract the TOTP inform
 The TOTP information will be displayed to the user and can be saved to a file by entering the desired file name and pressing enter.
 
 # Execution
-
-git clone https://github.com/Korben00/authy-export.git
-
-cd AuthyExtractor
-
+```sh
 python3 authy-export.py
+```
 
 # Compilation
 
 To compile the script into an executable file, run the following command:
 
-* pyinstaller --collect-all pyfiglet --onefile --noconsole --icon ico.ico authy-export.py
+```sh
+pyinstaller --collect-all pyfiglet --onefile --noconsole --icon ico.ico authy-export.py
+```
 
 # Author
 
