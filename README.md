@@ -37,7 +37,7 @@ On Windows, you may have to delete the update file found in the Authy Desktop's 
 
 For Mac users, you can enter the given command in Terminal prior to launching Authy Desktop, which will prevent automatic updates:
 
-mkdir -p ~/Library/Caches/com.authy.authy-mac.ShipIt ; rm -rf ~/Library/Caches/com.authy.authy-mac.ShipIt/* ; chmod 500 ~/Library/Caches/com.authy.authy-mac.ShipIt
+* mkdir -p ~/Library/Caches/com.authy.authy-mac.ShipIt ; rm -rf ~/Library/Caches/com.authy.authy-mac.ShipIt/* ; chmod 500 ~/Library/Caches/com.authy.authy-mac.ShipIt
 
 Clone or download this repository
 Navigate to the repository directory in a terminal
