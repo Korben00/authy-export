@@ -12,7 +12,7 @@ Extract TOTP information from Authy macOS / Linux.
 
 # Requirements
 
-* Authy Desktop
+* Authy Desktop <= 2.2.3
 * Python 3
 * PyChromeDevTools
 * tkinter
@@ -22,6 +22,22 @@ Extract TOTP information from Authy macOS / Linux.
 * qrcode
 
 # Installation
+
+Install Authy desktop (<= version 2.2.3).
+
+macOS: https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg
+Win64: https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe
+Win32: https://pkg.authy.com/authy/stable/2.2.3/win32/x32/Authy%20Desktop%20Setup%202.2.3.exe
+
+(thanks to @gboudreau for the links)
+
+In case your Authy Desktop updates itself without any notification, just close it, reinstall version 2.2.3, and then reopen it.
+
+On Windows, you may have to delete the update file found in the Authy Desktop's file location (inside the app-2.2.3 folder) after starting up version 2.2.3 to stop automatic updates.
+
+For Mac users, you can enter the given command in Terminal prior to launching Authy Desktop, which will prevent automatic updates:
+
+mkdir -p ~/Library/Caches/com.authy.authy-mac.ShipIt ; rm -rf ~/Library/Caches/com.authy.authy-mac.ShipIt/* ; chmod 500 ~/Library/Caches/com.authy.authy-mac.ShipIt
 
 Clone or download this repository
 Navigate to the repository directory in a terminal
