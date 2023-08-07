@@ -32,6 +32,14 @@ It might still work if you haven't updated Authy Desktop.
 - **Win (x64):** [https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe](https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe)
 - **Win (x32):** [https://pkg.authy.com/authy/stable/2.2.3/win64/x64/Authy%20Desktop%20Setup%202.2.3.exe](https://pkg.authy.com/authy/stable/2.2.3/win64/x64/Authy%20Desktop%20Setup%202.2.3.exe)
 
+(thanks to @gboudreau for the links)
+
+In case your Authy Desktop updates itself without any notification, just close it, reinstall version 2.2.3, and then reopen it.
+- On Windows, you may have to delete the update file found in the Authy Desktop's file location (inside the app-2.2.3 folder) after starting up version 2.2.3 to stop automatic updates.
+- For Mac users, you can enter the given command in Terminal prior to launching Authy Desktop, which will prevent automatic updates:
+
+```mkdir -p ~/Library/Caches/com.authy.authy-mac.ShipIt ; rm -rf ~/Library/Caches/com.authy.authy-mac.ShipIt/* ; chmod 500 ~/Library/Caches/com.authy.authy-mac.ShipIt```
+
 ### Linux
 Authy does not provide a snap package version history so you have to use flatpak which is community-run.
 
