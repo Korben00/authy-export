@@ -12,7 +12,7 @@ Extract TOTP information from Authy macOS / Linux.
 
 # Requirements
 
-* Authy Desktop
+* Authy Desktop <= 2.2.3
 * Python 3
 * PyChromeDevTools
 * tkinter
@@ -43,6 +43,7 @@ alias authy="flatpak run com.authy.Authy"
 **note:** run `alias authy="flatpak run com.authy.Authy` before running Authy Export if you've closed the terminal session 
 
 ## Install Authy-Export
+
 Clone or download this repository
 Navigate to the repository directory in a terminal
 Run the following command: 
