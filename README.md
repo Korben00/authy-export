@@ -23,29 +23,38 @@ Extract TOTP information from Authy macOS / Linux.
 
 # Installation
 
-Install Authy desktop (<= version 2.2.3).
+## Install Authy Destop
+Install Authy desktop version 2.2.3 (later versions does not work)
+It might still work if you haven't updated Authy Desktop.
 
-* macOS: https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg
-* Win64: https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe
-* Win32: https://pkg.authy.com/authy/stable/2.2.3/win32/x32/Authy%20Desktop%20Setup%202.2.3.exe
+### Windows / MacOS
+- **macOS:** [https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg](https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg)
+- **Win (x64):** [https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe](https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe)
+- **Win (x32):** [https://pkg.authy.com/authy/stable/2.2.3/win64/x64/Authy%20Desktop%20Setup%202.2.3.exe](https://pkg.authy.com/authy/stable/2.2.3/win64/x64/Authy%20Desktop%20Setup%202.2.3.exe)
 
-(thanks to @gboudreau for the links)
+### Linux
+Authy does not provide a snap package version history so you have to use flatpak which is community-run.
 
-In case your Authy Desktop updates itself without any notification, just close it, reinstall version 2.2.3, and then reopen it.
+```sh
+flatpak install com.authy.Authy
+sudo flatpak update --commit=9e872aaec7746c602f8b24679824c87ccc28d8e81b77f9b0213f7644cd939cee com.authy.Authy
+alias authy="flatpak run com.authy.Authy"
+```
+**note:** run `alias authy="flatpak run com.authy.Authy` before running Authy Export if you've closed the terminal session 
 
-On Windows, you may have to delete the update file found in the Authy Desktop's file location (inside the app-2.2.3 folder) after starting up version 2.2.3 to stop automatic updates.
-
-For Mac users, you can enter the given command in Terminal prior to launching Authy Desktop, which will prevent automatic updates:
-
-* mkdir -p ~/Library/Caches/com.authy.authy-mac.ShipIt ; rm -rf ~/Library/Caches/com.authy.authy-mac.ShipIt/* ; chmod 500 ~/Library/Caches/com.authy.authy-mac.ShipIt
+## Install Authy-Export
 
 Clone or download this repository
 Navigate to the repository directory in a terminal
 Run the following command: 
 
-* pip install -r requirements.txt
+```sh
+git clone https://github.com/Korben00/authy-export.git
+cd AuthyExtractor
+pip install -r requirements.txt
+```
 
-Linux: You need python3-dev libasound2-dev to install musicalbeeps package.
+**Linux:** You need python3-dev libasound2-dev to install musicalbeeps package.
 
 # Usage
 
@@ -55,18 +64,17 @@ The script will run the JavaScript script to decrypt and extract the TOTP inform
 The TOTP information will be displayed to the user and can be saved to a file by entering the desired file name and pressing enter.
 
 # Execution
-
-git clone https://github.com/Korben00/authy-export.git
-
-cd AuthyExtractor
-
+```sh
 python3 authy-export.py
+```
 
 # Compilation
 
 To compile the script into an executable file, run the following command:
 
-* pyinstaller --collect-all pyfiglet --onefile --noconsole --icon ico.ico authy-export.py
+```sh
+pyinstaller --collect-all pyfiglet --onefile --noconsole --icon ico.ico authy-export.py
+```
 
 # Author
 
