@@ -25,9 +25,9 @@ Extract TOTP information from Authy macOS / Linux.
 
 Install Authy desktop (<= version 2.2.3).
 
-macOS: https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg
-Win64: https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe
-Win32: https://pkg.authy.com/authy/stable/2.2.3/win32/x32/Authy%20Desktop%20Setup%202.2.3.exe
+* macOS: https://pkg.authy.com/authy/stable/2.2.3/darwin/x64/Authy%20Desktop-2.2.3.dmg
+* Win64: https://pkg.authy.com/authy/stable/2.2.3/win32/x64/Authy%20Desktop%20Setup%202.2.3.exe
+* Win32: https://pkg.authy.com/authy/stable/2.2.3/win32/x32/Authy%20Desktop%20Setup%202.2.3.exe
 
 (thanks to @gboudreau for the links)
 
