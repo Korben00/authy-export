@@ -58,7 +58,7 @@ Run the following command:
 
 ```sh
 git clone https://github.com/Korben00/authy-export.git
-cd AuthyExtractor
+cd authy-export
 pip install -r requirements.txt
 ```
 
